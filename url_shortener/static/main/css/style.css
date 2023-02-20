@@ -1,0 +1,136 @@
+* {
+  outline: none;
+}
+body {
+  background-color: #000;
+}
+.searchbox-wrap {
+  display: flex;
+  width: 500px;
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.searchbox-wrap input {
+  flex: 1;
+  padding: 30px 20px;
+  font-size: 1.1em;
+  -webkit-border-top-left-radius: 25px;
+  -webkit-border-bottom-left-radius: 25px;
+  -moz-border-radius-topleft: 25px;
+  -moz-border-radius-bottomleft: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: none;
+  border: none;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
+}
+.searchbox-wrap button {
+  padding-right: 10px;
+  background-color: #fff;
+  -webkit-border-top-right-radius: 25px;
+  -webkit-border-bottom-right-radius: 25px;
+  -moz-border-radius-topright: 25px;
+  -moz-border-radius-bottomright: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.19);
+  border: none;
+  cursor: pointer;
+  cursor: hand;
+}
+.searchbox-wrap button span {
+  margin-left: 50px;
+  padding: 24px 45px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  background-color: #f54e59;
+  border-radius: 20px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
+}
+.searchbox-wrap button span:hover {
+  background-color: #d6121f;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.19);
+}
+
+/* =============== w3schools - copy with one click ===================== */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ===================================================================== */
+
+.logo-form-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+#logo-img-id {
+  width: 400px;
+  -webkit-filter: drop-shadow(5px 4px 6px rgb(0 0 0 / 19%));
+}
+
+.short-link-section {
+  margin-top: 22px;
+}
+
+.short-link-holder {
+  padding: 16px;
+  text-align: center;
+  background-color: #b1ffb1;
+  border: solid 1px #004700;
+  border-radius: 8px;
+  color: #004d00;
+  font-size: 22px;
+}
+
+.short-link-copy-btn {
+  padding: 16px;
+  text-align: center;
+  background-color: #b1ffb1;
+  border: solid 1px #004700;
+  border-radius: 8px;
+  color: #004d00;
+  font-size: 22px;
+  cursor: pointer;
+}

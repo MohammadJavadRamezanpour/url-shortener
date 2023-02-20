@@ -1,0 +1,37 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}" />
+  <script src="{% static 'main/js/index.js' %}"></script>
+  <title>Button inside input</title>
+</head>
+
+<body>
+  <div class="logo-form-holder">
+    <img id="logo-img-id" src="{% static 'main/img/logo.png' %}" alt="" />
+    <form class="searchbox-wrap" method="post" action="{% url 'url_shortener:getCreateLinkView' %}">
+      {% csrf_token %}
+      <input type="text" name="long-link" placeholder="give me a big link" />
+      <button><span>Summerize</span></button>
+    </form>
+    {% if link_object %}
+    <div class="short-link-section">
+      <input id="short-link-input-id" type="text" class="short-link-holder" value="{{domain}}{{link_object.link_key}}"
+        readonly />
+      <div class="tooltip">
+        <button class="short-link-copy-btn" onclick="copyFunction()" onmouseout="outFunc()">
+          <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+          Copy
+        </button>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</body>
+
+</html>
